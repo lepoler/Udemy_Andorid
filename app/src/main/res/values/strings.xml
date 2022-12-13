@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Udemy_Android_Move1</string>
+    <string name="button_login">LogIn</string>
+    <string name="checkbox_sports">Sports</string>
+    <string name="CheckBox_videogames">videogames</string>
+    <string name="radio_button_famele">famele</string>
+    <string name="radio_buttom_male">male</string>
+    <string name="radio_buttom_other">other</string>
 </resources>

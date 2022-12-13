@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,5 +49,47 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i("LOGCICLO", "Starting onDestroy method");
+    }
+
+    public void clickOnHobby(View view) {
+        boolean checked = ((CheckBox) view).isChecked();
+        switch (view.getId()){
+            case R.id.checkBoxSports:
+
+                if(checked) {
+                    Toast.makeText(this, "You check sports", Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(this, "You uncheck sports", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.checkBoxGames:
+                if(checked){
+                    Toast.makeText(this, "You check videogames", Toast.LENGTH_SHORT).show();
+                }else {
+
+                }
+                break;
+
+        }
+    }
+
+    public void SexoSelecionado(View view) {
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch (view.getId()) {
+            case R.id.readioButton_female:
+                if (checked)
+                    Toast.makeText(this, "Selected Female", Toast.LENGTH_SHORT).show();
+                    break;
+            case R.id.radioButtonMan:
+                if (checked)
+                    Toast.makeText(this, "Selected male", Toast.LENGTH_SHORT).show();
+                    break;
+            case R.id.radioButtonOther:
+                if (checked)
+                    Toast.makeText(this, "Selected other", Toast.LENGTH_SHORT).show();
+                    break;
+        }
     }
 }
