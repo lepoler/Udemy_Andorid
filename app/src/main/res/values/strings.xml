@@ -6,4 +6,6 @@
     <string name="radio_button_famele">famele</string>
     <string name="radio_buttom_male">male</string>
     <string name="radio_buttom_other">other</string>
+    <string name="firstText">Text 1</string>
+    <string name="firstTextView">TextView 1</string>
 </resources>
